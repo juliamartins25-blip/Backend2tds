@@ -15,7 +15,7 @@ let meuNivel = 10;
 let nivelAtualizado = subirDeNivel(meuNivel);
 console.log(`Seu nível atual é ${nivelAtualizado}`);
 
-//Definir uma função qu esoma dois niveis
+//Definir uma função que soma dois niveis
 function soma(numero1, numero2){
     return numero1 + numero2
 };
