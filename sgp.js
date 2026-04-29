@@ -19,3 +19,15 @@ function filtrarMissoesConcluidas(listaDeMissoes) {
     const apenasConcluidas = listaDeMissoes.filter(VerificarStatusDaMissao);
     return apenasConcluidas;
 };
+
+function atualizarInventario(invetarioAtual, acao, nomeDoItem){
+    let novoInventario;
+
+    if (acao === "pegar"){
+        const inventarioComItemNovo = [inventarioAtual, nomeDoItem];
+        novoInventario = inventarioComItemNovo;
+    } else if (acao === "descartar") //parei aqui
+}
+
+const pontosDoJogador = [100, 50, 200, 10]
+console.log(pontosDoJogador);
