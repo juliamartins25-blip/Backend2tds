@@ -12,7 +12,7 @@ function calcularPontuacaoTotal(historicoDePontos){
 
 function filtrarMissoesConcluidas(listaDeMissoes) {
     const VerificarStatusDaMissao = function(missao){
-        const foiFinalizada =   missao.status === "concluída"; // === Igualdade ESTRITA
+        const foiFinalizada =   missao.status === "concluida"; // === Igualdade ESTRITA
         return foiFinalizada;
     };
 
@@ -42,9 +42,13 @@ console.log("Pontuação final: ", total);
 const missoes = [
     {nome: "Salvar a aldeia", status: "concluida"},
     {nome: "Encontrar o mapa", status: "em andamento"},
-    {nome: "Derrotar p chefão", status: "falhou"},
+    {nome: "Derrotar o chefão", status: "falhou"},
     {nome: "Coletar recursos", status: "concluida"}
 ];
 
+const concluidas = filtrarMissoesConcluidas(missoes);
+console.log("Missões concluidas: ", concluidas);
 
-console.log(missoes);
+const mochila = ["Mapa", "Lanterna"];
+const mochilaAtualizada = atualizarInventario(mochila, "pegar", "Bússola");
+console.log("Mochila após pegar: ");
