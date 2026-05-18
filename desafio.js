@@ -25,5 +25,5 @@ const valoDoDesconto = preco * desconto;
 const totalComDesconto = preco - valoDoDesconto;
 
 console.log(`O produto ${produto} custa R$${preco}.`);
-console.log(`Um cliente comprou ${quantidade} unidades do produto`);
+console.log(`Um cliente comprou ${quantidade} unidades do produto, totalizando R$${total}.`);
 console.log(`A loja estava com uma promoção: compre três produtos e guanhe um desconto de ${desconto * 100}%`);
