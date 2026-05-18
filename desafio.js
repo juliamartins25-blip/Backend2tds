@@ -20,10 +20,22 @@ const preco = 100;
 let quantidade = 3;
 
 const total = produto * quantidade;
-const desconto = 20 / 100;
-const valoDoDesconto = preco * desconto;
-const totalComDesconto = preco - valoDoDesconto;
+const descontoDoTenis = (20 / 100);
+const valorDoDesconto = preco * descontoDoTenis;
+const totalComDesconto = preco - valorDoDesconto;
 
-console.log(`O produto ${produto} custa R$${preco}.`);
+console.log(`\nO produto ${produto} custa R$${preco}.`);
 console.log(`Um cliente comprou ${quantidade} unidades do produto, totalizando R$${total}.`);
-console.log(`A loja estava com uma promoção: compre três produtos e guanhe um desconto de ${desconto * 100}%`);
+console.log(`A loja estava com uma promoção: compre três produtos e guanhe um desconto de ${descontoDoTenis * 100}%`);
+console.log(`O valor total da compra com desconto é de R$${totalComDesconto}.`);
+
+const dinheiro = 500;
+const quantidadeDeProdutosCompraveis = dinheiro / preco;
+quantidade = quantidadeDeProdutosCompraveis;
+
+const quantidadeParaDesconto = 3 * preco;
+const valorDaCompra = (dinheiro - quantidadeParaDesconto) + totalComDesconto;
+const troco = dinheiro - valorDaCompra;
+
+console.log(`Um cliente que levar R$${dinheiro}, conseguira comprar ${quantidade} produtos.`);
+console.log(`Com o desconto o valor total da compra seria ${valorDaCompra}, e sobraria ${troco} de troco.`);
