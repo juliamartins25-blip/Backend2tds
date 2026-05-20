@@ -19,7 +19,7 @@ const produto = "tenis";
 const preco = 100;
 let quantidade = 3;
 
-const total = produto * quantidade;
+const total = preco * quantidade;
 const descontoDoTenis = (20 / 100);
 const valorDoDesconto = preco * descontoDoTenis;
 const totalComDesconto = preco - valorDoDesconto;
@@ -39,3 +39,14 @@ const troco = dinheiro - valorDaCompra;
 
 console.log(`Um cliente que levar R$${dinheiro}, conseguira comprar ${quantidade} produtos.`);
 console.log(`Com o desconto o valor total da compra seria ${valorDaCompra}, e sobraria ${troco} de troco.`);
+
+// 4. Declare estoque e preço e exiba se o peoduto entra em promoção, se está em falta e se presisa de reposição de produto.
+
+let estoqueDoTenis = 100;
+let estaEmPromocao = true;
+
+if (estaEmPromocao === true){
+    console.log(``);
+}
+
+
