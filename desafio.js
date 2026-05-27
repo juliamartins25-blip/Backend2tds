@@ -40,13 +40,40 @@ const troco = dinheiro - valorDaCompra;
 console.log(`Um cliente que levar R$${dinheiro}, conseguira comprar ${quantidade} produtos.`);
 console.log(`Com o desconto o valor total da compra seria ${valorDaCompra}, e sobraria ${troco} de troco.`);
 
-// 4. Declare estoque e preço e exiba se o peoduto entra em promoção, se está em falta e se presisa de reposição de produto.
+// 4. Declare estoque e preço e exiba se o produto entra em promoção, se está em falta e se presisa de reposição de produto.
+
+function verificaSePodutoEstaEmPromoção(){
+    if (estaEmPromocao === false){
+        console.log(`O produto não estava em promoção, e seu estoque era de ${estoqueDoTenis} unidades.`);
+    } else if (estaEmPromocao === true){
+        console.log(`O produto entrou em promoção e o estoque ficou em ${estoqueDoTenis}.`);
+    };
+};
+
+function verificaSeTenisEstaEmFalta(){
+    if (estoqueDoTenis === 0){
+        estaEmFalta = true;
+    } else if (estoqueDoTenis > 0){
+        estaEmFalta = false;
+    };
+
+    if (estaEmFalta){
+        console.log(`O produto precisa de reposição de estoque, pois está em falta.`);
+    };
+};
 
 let estoqueDoTenis = 100;
-let estaEmPromocao = true;
+let estaEmPromocao = false;
+let estaEmFalta;
 
-if (estaEmPromocao === true){
-    console.log(``);
-}
+console.log(`\nEm uma loja o produto ${produto} custava R$${preco}.`);
+verificaSePodutoEstaEmPromoção();
 
+estaEmPromocao = true;
+estoqueDoTenis = 0;
 
+verificaSePodutoEstaEmPromoção();
+
+verificaSeTenisEstaEmFalta();
+
+// De acordo com as variáveis lançadas e daclaradas, quais ou qual processo pode ser alterado para uma função?
