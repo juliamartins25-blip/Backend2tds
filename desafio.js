@@ -38,7 +38,7 @@ const valorDaCompra = (dinheiro - quantidadeParaDesconto) + totalComDesconto;
 const troco = dinheiro - valorDaCompra;
 
 console.log(`Um cliente que levar R$${dinheiro}, conseguira comprar ${quantidade} produtos.`);
-console.log(`Com o desconto o valor total da compra seria ${valorDaCompra}, e sobraria ${troco} de troco.`);
+console.log(`Com o desconto o valor total da compra seria R$${valorDaCompra}, e sobraria R$${troco} de troco.`);
 
 // 4. Declare estoque e preço e exiba se o produto entra em promoção, se está em falta e se presisa de reposição de produto.
 
